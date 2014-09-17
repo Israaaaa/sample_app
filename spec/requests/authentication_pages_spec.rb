@@ -78,8 +78,8 @@ describe "Authentication" do
           specify { expect(response).to redirect_to(signin_path) }
         end
       end
-
-      end
+    end
+    end
 
       describe "in the Users controller" do
 
@@ -149,6 +149,7 @@ describe "Authentication" do
         before { delete user_path(user) }
         specify { expect(response).to redirect_to(root_url) }
       end
-    end
+    end 
+
   end #End of authorization
 end #End of all Authentication
